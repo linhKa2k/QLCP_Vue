@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div style="padding: 3%; font-family: 'Times New Roman', Times, serif; color: blue;">
+        <div style=" display: flex; justify-content: space-around; width: 100%;">
+            <div>
+                <h2 style="font-family: 'Times New Roman', Times, serif; color: blue;">TỔNG CÔNG TY CỔ PHẦN BƯU CHÍNH
+                    VIETTEL</h2>
+                <h2 style=" text-align: center; color: red;">HỘI ĐỒNG QUẢN TRỊ</h2>
+            </div>
+            <div>
+                <h2 style="font-family: 'Times New Roman', Times, serif; color: blue;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT
+                    NAM</h2>
+                <h2 style="text-align: center; color: blue;">Độc Lập - Tự Do - Hạnh Phúc</h2>
+            </div>
+        </div>
+        <div>
+            <table style="width: 100%;" border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Nội dung</th>
+                        <th>Số lượng</th>
+                        <th>Hạn mức</th>
+                        <th>Chi phí dự tính</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ##cost_body##
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Tổng</td>
+                        <td>##total_cost_amount_final##</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <p class="category">II. Chi phí công tác theo hóa đơn</p>
+        <div>
+            <table style="width: 100%;" border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Người thanh toán</th>
+                        <th>Số hóa đơn</th>
+                        <th>Ký hiệu</th>
+                        <th>Ngày hóa đơn</th>
+                        <th>Mã số thuế</th>
+                        <th>Tên nhà cung cấp</th>
+                        <th>Số tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ##invoice_list_body##
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: space-around; font-family: 'Times New Roman', Times, serif;">
+        <h2>PHỤ TRÁCH ĐƠN VỊ</h2>
+        <h2>PHÒNG TÀI CHÍNH</h2>
+    </div>
+</body>
+
+</html>

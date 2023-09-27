@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .title_footer {
+            display: flex;
+            justify-content: space-evenly;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-family:'Times New Roman', Times, serif  ;color: black; padding-top: 40px">
+      
+
+        <div>
+            <h2 style="text-align: center;font-weight: bold;">GIẤY ĐỀ NGHỊ CHUYỂN TIỀN</h2>
+            <h3 style="text-align: center;    font-weight: bold;
+            font-size: 20px;">Kính gửi:  Tổng giám đốc</span></h3>
+        </div>
+
+        <div style="display: flex; flex-direction: column; padding-left: 3%;">
+            <b>Đề nghị thanh toán ngày : ##date##<span></b>
+            <b>Bộ phận đề nghị:<span style="font-weight: normal;"> PHÒNG TÀI CHÍNH</span></b>
+            <b>Người đề nghị: ##user##<span></span></b>
+         
+        </div>
+
+        <div style="padding: 0px 3%; margin:40px 0px;" class="tables">
+            <table border="1" cellspacing="0" cellpadding="5" style="width: 100%">
+                <thead>
+                    <tr style="width: 100%;">
+                        <th>STT</th>
+                        <th>Đơn vị đề nghị</th>
+                        <th>Nội dung đề nghị</th>
+                        <th>Đơn vị thụ hưởng</th>
+                        <th>Số tài khoản</th>
+                        <th>Tại ngân hàng</th>
+                        <th>Tổng tiền phải trả</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ##table##
+                </tbody>
+            </table>
+        </div>
+        <div class="title_footer">
+            <p>KẾ TOÁN TỔNG HỢP</p>
+            <p>KẾ TOÁN TRƯỞNG</p>
+            <p>TỔNG GIÁM ĐỐC</p>
+        </div>
+    </div>
+</body>
+
+</html>

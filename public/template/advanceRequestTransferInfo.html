@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div style="padding: 1%; font-family: 'Times New Roman', Times, serif; color: black; width: 100%;">
+        <div style="display: flex; justify-content: space-between; padding: 1%;">
+            <div>
+                <h3>TỔNG CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</h3>
+                <h3 style="text-align: center;">PHÒNG TÀI CHÍNH</h3>
+            </div>
+            <div>
+                <h3>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h3>
+                <h3 style="text-align: center;">ĐỘC LẬP - TỰ DO - HẠNH PHÚC</h3>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="text-align: center;">ĐỀ NGHỊ CHUYỂN KHOẢN CÁC KHOẢN BỊ TRẢ LẠI DO SAI THÔNG TIN TÀI KHOẢN</h2>
+            <h3 style="text-align: center;">Ngày đề nghị chuyển khoản: <span>##created_at##</span></h3>
+        </div>
+
+        <div style="display: flex; flex-direction: column; padding-left: 3%;">
+            <span id="flex_row">
+                <b>Về việc:</b><span>##reason##</span>
+            </span>
+            <span id="flex_row">
+                <b>Mã đề nghị chuyển khoản ban đầu: </b><span>##before_code##</span>
+            </span>
+            <span id="flex_row">
+                <b>Theo kế hoạch công tác số: </b><span>##plan_code##</span>
+            </span>
+            <span id="flex_row">
+                <b>Đơn vị đề nghị: </b><span>##department_require##</span>
+            </span>
+            <span id="flex_row">
+                <b>Người tổng hợp: </b><span>##user_synthetic##</span>
+            </span>
+        </div>
+        <div style="margin-left: 50%; font-size: small;">Đvt: VNĐ</div>
+        <div style="display: flex; justify-items: space-between;">
+            <table id="customers" style="width: 65%; table-layout:fixed;" border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <th rowspan="2" width="40px">STT</th>
+                    <th colspan="5">Thông tin chuyển khoản ban đầu</th>
+                    <th colspan="3">Nội dung điều chỉnh</th>
+                    <th rowspan="2">Lý do điều chỉnh</th>
+                    <th rowspan="2">Hồ sơ chứng minh </th>
+                </tr>
+                <tr>
+                    <th>Tên TK</th>
+                    <th>Số TK ( Số CMND ) </th>
+                    <th>Tại Ngân hàng</th>
+                    <th>Nội dung chuyển khoản</th>
+                    <th>Số tiền</th>
+                    <th>Tên TK</th>
+                    <th>Số TK ( Số CMND ) </th>
+                    <th>Tại Ngân Hàng</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">1</td>
+                    <td>##name_bank_acount##</td>
+                    <td>##acount_number##</td>
+                    <td>##bank##</td>
+                    <td>##send_content##</td>
+                    <td>##amount##</td>
+                    <td>##name_bank_acount_diff##</td>
+                    <td>##acount_number_diff##</td>
+                    <td>##bank_diff##</td>
+                    <td>##reason_change##</td>
+                    <td>##file_proof##</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">Tổng cộng</td>
+                    <td>##total_amount##</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div style="width: 1%;"></div>
+            <table id="customers" style="width: 33%; " border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <th>Mã NV</th>
+                    <th>Tên nhân viên</th>
+                    <th>Mã CN</th>
+                    <th>Ngày bị trả lại</th>
+                    <th>Tài khoản nợ </th>
+                    <th>TT lợi nhuận</th>
+                </tr>
+                <tr>
+                    <td>##staff_code##</td>
+                    <td>##staff_name##</td>
+                    <td>##CN_code##</td>
+                    <td>##give_back_date##</td>
+                    <td>##account_debt##</td>
+                    <td>##total_profit##</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- <div class="tables" style="display: flex; padding-left: 1%; padding-right: 1%; margin-top: 2%; width: 100%;">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <th rowspan="2">STT</th>
+                    <th colspan="5">Thông tin chuyển khoản ban đầu</th>
+                    <th colspan="3">Nội dung điều chỉnh</th>
+                    <th rowspan="2">Lý do điều chỉnh</th>
+                    <th rowspan="2">Hồ sơ chứng minh </th>
+                </tr>
+                <tr>
+                    <th>Tên TK</th>
+                    <th>Số TK ( Số CMND ) </th>
+                    <th>Tại Ngân hàng</th>
+                    <th>Nội dung chuyển khoản</th>
+                    <th>Số tiền</th>
+                    <th>Tên TK</th>
+                    <th>Số TK ( Số CMND ) </th>
+                    <th>Tại Ngân Hàng</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;">1</td>
+                    <td>##name_bank_acount##</td>
+                    <td>##acount_number##</td>
+                    <td>##bank##</td>
+                    <td>##send_content##</td>
+                    <td>##amount##</td>
+                    <td>##name_bank_acount_diff##</td>
+                    <td>##acount_number_diff##</td>
+                    <td>##bank_diff##</td>
+                    <td>##reason_change##</td>
+                    <td>##file_proof##</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">Tổng cộng</td>
+                    <td>##total_amount##</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table border="1" cellspacing="0" cellpadding="5" style="margin-left: 10px; width: 60%;">
+                <thead>
+                    <tr>
+                        <th>Mã NV</th>
+                        <th>Tên nhân viên</th>
+                        <th>Mã CN</th>
+                        <th>Ngày bị trả lại</th>
+                        <th>Tài khoản nợ </th>
+                        <th>TT lợi nhuận</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>##staff_code##</td>
+                        <td>##staff_name##</td>
+                        <td>##CN_code##</td>
+                        <td>##give_back_date##</td>
+                        <td>##account_debt##</td>
+                        <td>##total_profit##</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div> -->
+
+        <div style="display: flex; flex-direction: column; padding-left: 3%;">
+            <span>Bằng chữ : ##total_amount_letter## </span>
+            <i>tôi xin cam kết thông tin chuyển khoản lại là đúng, nếu sai tôi xin hoàn toàn chịu trách nghiệm với Ban
+                Tổng Giám Đốc Công Ty và trước pháp luật </i>
+            <i>Khách hàng thay đổi thông tin CK</i>
+        </div>
+
+        <div style="display: flex; justify-content: space-evenly; font-weight: bold; ">
+            <p>TRƯỞNG ĐƠN VỊ</p>
+            <p>TRƯỞNG NHÓM</p>
+            <p>KẾ TOÁN THANH TOÁN</p>
+            <p>TỔNG GIÁM ĐỐC</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+    }
+
+    #customers td {
+        width: 100px;
+        overflow-wrap: break-word;
+    }
+
+    #flex_row {
+        display: flex;
+    }
+</style>

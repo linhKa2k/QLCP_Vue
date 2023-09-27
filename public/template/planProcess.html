@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF demo</title>
+    <!-- <link rel="stylesheet" href="../css/styles.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <style>
+        .title_nummber {
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 3%;
+        }
+
+        /* body {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <div style="padding: 4%; font-family: 'Times New Roman', Times, serif; color: black;">
+        <div style="display: flex; justify-content:space-between;">
+            <div>
+                <h3>TỔNG CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</h3>
+                <h3>PHÒNG....</h3>
+                <p>Số: /BC-VTP-....</p>
+            </div>
+            <div>
+                <h3>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h3>
+                <h3 style="text-align: center;">Độc lập - Tự do - Hạnh phúc</h3>
+                <p style="text-align: center;">
+                    Hà nội, Ngày ##day_now## Tháng ##month_now## Năm ##year_now##
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <h1>KẾ HOẠCH CÔNG TÁC</h1>
+            <h1>##name_of_plan##</h1>
+        </div>
+
+        <div>
+            <p class="title_nummber">1. Nhân sự tham gia</p>
+            <table border="1" cellspacing="0" cellpadding="5" style="width: 100%">
+                <thead>
+                    <tr style="width: 100%;">
+                        <th style="width: 5%;">STT</th>
+                        <th style="width: 20%;">Đơn vị</th>
+                        <th style="width: 15%;">Mã NV</th>
+                        <th style="width: 20%;">Họ và tên</th>
+                        <th style="width: 15%;">Từ ngày</th>
+                        <th style="width: 15%;">Đến ngày</th>
+                        <th style="width: 10%;">Số ngày CT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr> -->
+
+                    ##table##
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <p class="title_nummber">2. Địa điểm công tác</p>
+            ##address_business_list##
+            <!-- <h3>Đơn vị: <span>##department_require##</span></h3>
+            <p>Địa chỉ: <span>##address1##</span> </p>
+            <h3>Đơn vị: <span>##department_process##</span></h3>
+            <p>Địa chỉ: <span>##address2##</span> </p> -->
+        </div>
+
+        <div>
+            <p class="title_nummber">3. Thời gian công tác </p>
+            <h3 style="padding-left: 5%;">Từ ngày: <span>##start_time##</span>, đến ngày: <span>##end_time##</span></h3>
+        </div>
+
+        <div>
+            <p class="title_nummber">4. Nội dung công tác</p>
+            <h3 style="padding-left: 5%;">##description##</h3>
+        </div>
+
+        <div style="display: flex;">
+            <p class="title_nummber">5. Chi phí công tác:
+                <span style="font-weight: normal;">chi phí phụ lục đi kèm</span>
+            </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-around;">
+            <h2>PHỤ TRÁCH ĐƠN VỊ</h2>
+            <h2>PHÒNG TÀI CHÍNH</h2>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div id="question-box-id" class="question-wrapper"></div>
+        <div id="question-box-id" class="question-wrapper">##description##</div>
+        <div id="question-box-id" class="question-wrapper">##created_at##</div>
+        <div id="question-box-id" class="question-wrapper">##description##</div>
+        <div id="question-box-id" class="question-wrapper">##descrisption##</div>
+        <div id="question-box-id" class="question-wrapper">##creatsed_at##</div>
+        <div id="question-box-id" class="question-wrapper">##descrsiption##</div> -->
+    </div>
+</body>
+
+</html>

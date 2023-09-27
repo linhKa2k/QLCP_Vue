@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF demo</title>
+    <!-- <link rel="stylesheet" href="../css/styles.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <style>
+        .title_nummber {
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding: 3%; font-family: Times New Roman, Times, serif; color: black;">
+        <div style="display: flex; justify-content:space-between;">
+            <div>
+                <h3>TỔNG CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</h3>
+                <div style="text-align: center;">
+                    <h3>PHÒNG....</h3>
+                    <p>Số: /BC-VTP-....</p>
+                </div>
+            </div>
+            <div>
+                <h3>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h3>
+                <h3 style="text-align: center;">Độc lập - Tự do - Hạnh phúc</h3>
+                <p style="text-align: center;">Hà nội, Ngày ##day_now## Tháng ##month_now## Năm ##year_now##</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <h1 style="margin-top: 3%;">ĐỀ NGHỊ XÁC NHẬN KẾT THÚC CÔNG TÁC</h1>
+        </div>
+
+        <div>
+            <p class="title_nummber">1. Nội dung</p>
+            <p class="title_nummber">1.1. Nhân sự tham gia</p>
+            <table border="1" cellspacing="0" cellpadding="5" style="width: 90%; margin: auto;">
+                <thead>
+                    <tr style="width: 100%;">
+                        <th style="width: 5%;">STT</th>
+                        <th style="width: 20%;">Đơn vị</th>
+                        <th style="width: 15%;">Mã NV</th>
+                        <th style="width: 20%;">Họ và tên</th>
+                        <th style="width: 15%;">Từ ngày</th>
+                        <th style="width: 15%;">Đến ngày</th>
+                        <th style="width: 10%;">Số ngày CT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ##body##
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <p class="title_nummber">1.2. Địa điểm công tác</p>
+            ##address_business_list##
+            <!-- <h3>Đơn vị: ##from_department##</h3>
+            <p>Địa chỉ: ##from_address## </p>
+            <h3>Đơn vị: ##to_department##</h3>
+            <p>Địa chỉ: ##to_address## </p> -->
+        </div>
+
+        <div>
+            <p class="title_nummber">2. Kết quả công tác </p>
+            <p class="title_nummber">2.1 Nội dung công việc: </p>
+            <p style="padding-left: 5%;">##content##</p>
+            <p class="title_nummber">2.2. Đánh giá kết quả đợt công tác: </p>
+            <span style="padding-left: 5%;">##result##</span>
+            <p class="title_nummber">2.3. Đề xuất: </p>
+            <span style="padding-left: 5%;">##propose##</span>
+            <!-- <p class="title_nummber">3. Chi phí công tác</p> -->
+        </div>
+
+        <!-- <div>
+            <p class="title_nummber">4. Nội dung công tác</p>
+        </div> -->
+
+        <div style="display: flex;">
+            <p style="font-weight: bold; font-size: 20px; margin-left: 3%;">5. Chi phí công tác:</p>
+            <h2 style="font-weight: normal; padding-left: 1%;">chi phí phụ lục đi kèm</h2>
+
+        </div>
+
+        <!-- <div style="display: flex; justify-content: space-between;">
+            <div>
+                <h2>Nơi nhận:</h2>
+                <p>- Ban TGD (để bv)</p>
+                <p>- Đơn vị lập kế hoạch (để t/h)</p>
+                <p>Lưu VT, P....; ST03</p>
+            </div>
+            <div>
+                <h3>PHÒNG....</h3>
+            </div>
+        </div> -->
+        <div style="display: flex; justify-content: space-around;">
+            <h2>PHỤ TRÁCH ĐƠN VỊ</h2>
+            <h2>BAN TỔNG GIÁM ĐỐC</h2>
+        </div>
+    </div>
+</body>
+
+</html>

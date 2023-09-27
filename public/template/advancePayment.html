@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div style=" padding: 3%; font-family: 'Times New Roman', Times serif; color: blue;">
+        <div>
+            <h2 style="color: blue;">CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</h2>
+            <h2 style="color: blue;">PHÒNG KINH DOANH </h2>
+        </div>
+        <h1 style="text-align: center; margin-top: 40px; color: blue;">##title##</h1>
+        <h3 style="text-align: center; color: black;">Số:<span>##code##</span></h3>
+        <div>
+            <div>
+                <p style=" display: flex;">
+                    <span>Họ và tên người thanh toán:</span>
+                    <span style="padding-left: 1%;">##full_name##</span>
+                </p>
+                <p>
+                    <span>Bộ phận công tác:</span>
+                    <span style="padding-left: 1%;">##department_business##</span>
+                </p>
+                <p>
+                    <span>Nội dung công tác:</span>
+                    <span style="padding-left: 1%;">##content_business##</span>
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end;">
+                <i>Đơn vị tính: Đồng Việt Nam</i>
+            </div>
+        </div>
+
+        <div>
+            <table style="width: 100%;" border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr style="background-color: rgb(249, 230, 230);">
+                        <th style="width: 5%;">STT</th>
+                        <th>Diễn giải</th>
+                        <th style="text-align: center;">Số tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display: flex; justify-content: center;">I</td>
+                        <td>Số tiền tạm ứng</td>
+                        <td style="text-align: center;">##advance_amount##</td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex; justify-content: center;">II</td>
+                        <td>Số tiền đã chi</td>
+                        <td style="text-align: center;">##cost_used_amount##</td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex; justify-content: center;">III</td>
+                        <td>Chênh lệch</td>
+                        <td style="text-align: center;">##diff_amount##</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="display: flex; justify-content: center;">1.</p>
+                            <p style="display: flex; justify-content: center;">2.</p>
+                        </td>
+                        <td>
+                            <p>Số tiền tạm ứng chi không hết ( I - II )</p>
+                            <p>Chi quá số tiền tạm ứng ( II - I )</p>
+                        </td>
+                        <td>
+                            <p style="text-align: center;">##advance_cost_not_used_up##</p>
+                            <p style="text-align: center;">##expenses_over_advance##</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <i>Bằng chữ: ##total_letter## </i>
+        </div>
+        <p style="display: flex; justify-content: flex-end;">
+            Ngày ##day_now## Tháng ##month_now## Năm ##year_now##
+        </p>
+        <div style="display: flex; justify-content: space-evenly;">
+            <h2 style="color: blue;">Người TT</h2>
+            <h2 style="color: blue;">Kế toán TT</h2>
+            <h2 style="color: blue;">TP. Tài chính</h2>
+            <h2 style="color: blue;">Tổng giám đốc</h2>
+        </div>
+    </div>
+</body>
+
+</html>

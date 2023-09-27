@@ -1,0 +1,43 @@
+.ant-btn-primary {
+  background-color: #ed1b2f;
+  border-color: #ed1b2f;
+}
+
+.view-control {
+  background-color: #fff !important;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding: 6px 0;
+  position: relative;
+  text-overflow: ellipsis;
+  width: 100%;
+  cursor: default;
+  pointer-events: auto;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.dialog-class .ant-modal-body {}
+
+.ant-form-item-label {
+  text-align: left;
+}
+
+.ant-modal-body {
+  padding: 8px 16px;
+}
+
+.ant-form {
+  :deep(label) {
+    font-weight: bold !important;
+    color: black !important;
+  }
+
+  :deep(.ant-form-item-control-wrapper) {
+    // border-bottom: 1px solid silver;
+
+    .ant-form-item-control {
+      line-height: 40px;
+    }
+  }
+}

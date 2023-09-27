@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF demo</title>
+    <!-- <link rel="stylesheet" href="../css/styles.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <style>
+        .title_footer {
+            font-weight: bold;
+        }
+
+        /* body {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <div style="padding: 5%; font-family: 'Times New Roman', Times, serif; color: black;">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <p class="title">TỔNG CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</p>
+                <b> ##user_department_upper##</b>
+            </div>
+            <div>
+                <h3>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h3>
+                <h3 style="text-align: center;">Độc lập - Tự do - Hạnh phúc</h3>
+            </div>
+        </div>
+        <h2 style="text-align: center; margin-top: 3%;">GIẤY ĐỀ NGHỊ CHUYỂN TIỀN</h2>
+        <h4 style="text-align: center;">Kính gửi: Tổng giám đốc</h4>
+        <div id="question-box-id" class="question-wrapper">
+            <b>1. Người đề nghị: </b>##user_request##
+        </div>
+        <div><b>2. Bộ phận đề nghị: </b>##user_department##</div>
+        <div><b>3. Căn cứ vào kế hoạch số </b>##plan_code##<b> ngày </b>##date_now##</div>
+
+        <div style="width: 100%; margin-top: 5%;">
+            <span style="margin-left: 80%;">ĐVT: VND</span>
+            <table border="1" cellspacing="0" cellpadding="5" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th rowspan="2">STT</th>
+                        <th rowspan="2">Đơn vị</th>
+                        <th rowspan="2">Nội dung đề nghị</th>
+                        <th rowspan="2">Đơn vị thụ hưởng</th>
+                        <th rowspan="2">Số tài khoản</th>
+                        <th rowspan="2">Tại ngân hàng</th>
+                        <th rowspan="2">Tổng tiền phải trả</th>
+                        <th colspan="4" style="text-align: center;">Dữ liệu hạch toán trên SAP</th>
+                    </tr>
+                    <tr>
+                        <th>TK Nợ</th>
+                        <th>Mã BP</th>
+                        <th>TT chi phí</th>
+                        <th>TT lợi nhuận</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ##table##
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="font-weight: bold;">Tổng cộng</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>##total_pay##</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <span>Bằng chữ: ##total_letter##</span>
+        </div>
+
+        <div style="width: 100%; display: flex; justify-content: flex-end;">
+            <p>Hà Nội, Ngày ##day_now## tháng ##month_now## năm ##year_now##</p>
+        </div>
+
+        <div style="display: flex; justify-content: space-evenly;">
+            <p class="title_footer">##user_department_upper##</p>
+            <p class="title_footer">KẾ TOÁN THANH TOÁN </p>
+            <p class="title_footer">PHÒNG TÀI CHÍNH </p>
+            <p class="title_footer">TỔNG GIÁM ĐỐC</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
